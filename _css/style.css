@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.carrito-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.carrito-btn img {
+    width: 20px;
+    height: 20px;
+}
+
+.body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.header {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.285),
+        rgba(0, 0, 0, 0.393)),
+        url(imagen/fondo.jpeg);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2%;
+}
+
+.logo {
+    color: antiquewhite;
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.menu .navbar ul {
+    display: flex;
+}
+
+.menu .navbar ul li {
+    margin: 0 1rem;
+}
+
+.menu .navbar ul li a {
+    font-size: 1.1rem;
+    color: bisque;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+}
+
+.menu .navbar ul li a:hover {
+    color: red;
+}
+
+#menu {
+    display: none;
+}
+
+.menu-icono {
+    width: 2rem;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+.header-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    color: rgb(228, 196, 20);
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+}
+
+.header-content p {
+    font-size: 1.2rem;
+    color: rgb(8, 6, 0);
+    padding: 0 10%;
+    margin-bottom: 2rem;
+}
+
+.btn-1 {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    background-color: #f45100;
+    color: #f9fafc;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+
+.btn-1:hover {
+    background-color: #e64a19;
+}
+
+.tatuaje {
+    padding: 5% 0;
+    background-color: rgb(162, 53, 53);
+    text-align: center;
+}
+
+.tatuaje-content h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+}
+
+.txt-p {
+    font-size: 1.2rem;
+    color: black;
+    padding: 0 10%;
+    margin-bottom: 2rem;
+}
+
+.tatoo-studio {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 5%;
+}
+
+.tatoo-1, .services-1 {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.tatoo-1 img, .services-1 img {
+    width: 100%;
+    max-width: 20rem;
+    border-radius: 0.8rem;
+}
+
+.servicios {
+    padding: 5% 0;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+.services-content h2 {
+    font-size: 3rem;
+    line-height: 1.2;
+    color: darkslategrey;
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    margin-bottom: 5%;
+}
+
+.producto {
+    padding: 5% 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.producto-detalle {
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.8rem;
+    text-align: center;
+}
+
+.contacto {
+    padding: 5% 0;
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+.contacto form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto form label {
+    margin-top: 1rem;
+}
+
+.contacto form input, .contacto form textarea {
+    width: 100%;
+    max-width: 40rem;
+    padding: 1rem;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #ccc;
+}
+
+.contacto form input[type="submit"] {
+    background-color: #f45100;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+}
+
+.contacto form input[type="submit"]:hover {
+    background-color: #e64a19;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    padding: 5% 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.link {
+    flex: 1;
+    min-width: 20rem;
+    margin-bottom: 2rem;
+}
+
+.link h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.link ul {
+    list-style-type: none;
+}
+
+.link ul li {
+    margin-bottom: 1rem;
+}
+
+.link ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+/* Media Queries para diferentes dispositivos */
+
+@media only screen and (max-width: 1200px) {
+    .header-content h1 {
+        font-size: 3.5rem;
+    }
+
+    .header-content p {
+        padding: 0 5%;
+    }
+
+    .tatoo-studio {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .menu .navbar ul {
+        display: none;
+    }
+
+    .menu label {
+        display: block;
+    }
+
+    .header-content h1 {
+        font-size: 3rem;
+    }
+
+    .header-content p {
+        font-size: 1rem;
+    }
+
+    .tatoo-studio {
+        grid-template-columns: 1fr;
+    }
+
+    .services-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .header-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .header-content p {
+        font-size: 0.9rem;
+    }
+
+    .btn-1 {
+        padding: 0.8rem 2rem;
+        font-size: 0.9rem;
+    }
+
+    .tatuaje-content h2 {
+        font-size: 2rem;
+    }
+
+    .txt-p {
+        font-size: 1rem;
+    }
+
+    .services-content h2 {
+        font-size: 2rem;
+    }
+
+    .link h3 {
+        font-size: 1.2rem;
+    }
+
+    .link ul li a {
+        font-size: 1rem;
+    }
+}
+
+
